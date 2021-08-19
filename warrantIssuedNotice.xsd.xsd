@@ -1,0 +1,28 @@
+<xs:schema elementFormDefault="qualified" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element final="#all" block="#all" name="Warrant">
+		<xs:complexType>
+			<xs:sequence>
+				<!--<xs:element name="TimeStamp" maxOccurs="1" minOccurs="1" type="xs:string"/>-->
+				<xs:element name="Number" maxOccurs="1" minOccurs="1" type="xs:string"/>
+				<!--<xs:element name="IssueDate" maxOccurs="1" minOccurs="1" type="xs:string"/>-->
+				<xs:element name="LastName" maxOccurs="1" minOccurs="1" type="xs:string"/>
+				<xs:element name="FirstName" maxOccurs="1" minOccurs="1" type="xs:string"/>
+				<xs:element name="MiddleName" maxOccurs="1" minOccurs="0" type="xs:string"/>
+				<xs:element name="DateOfBirth" maxOccurs="1" minOccurs="1" type="xs:string"/>
+				<xs:element name="Gender" maxOccurs="1" minOccurs="1" type="xs:string"/>
+				<xs:element name="HairColor" maxOccurs="1" minOccurs="0" type="xs:string"/>
+				<xs:element name="EyeColor" maxOccurs="1" minOccurs="0" type="xs:string"/>
+				<xs:element name="Height" maxOccurs="1" minOccurs="0" type="HEIGHT"/>
+				<xs:element name="Weight" maxOccurs="1" minOccurs="0" type="xs:string"/>
+				<!--<xs:element name="DATA" maxOccurs="1" minOccurs="1" type="xs:string"/>-->
+			</xs:sequence>
+			<xs:attribute name="OdysseyWarrantID" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="HEIGHT">
+		<xs:sequence>
+			<xs:element name="Feet" maxOccurs="1" minOccurs="1" type="xs:integer"/>
+			<xs:element name="Inches" maxOccurs="1" minOccurs="1" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
